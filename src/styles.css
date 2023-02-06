@@ -1,1 +1,84 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+@keyframes blinkCursor{
+    from {
+        border-right-color: #ffffff;
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0px;
+    }
+    30% {
+        white-space: wrap;
+    }
+    to {
+        width: 600px;
+    }
+}
+
+p,h1,ul,li {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 1000px;
+    margin-left: 450px;
+    padding-top: 30px;
+    padding-left: 30px;
+    height: 700px;
+    position: absolute;
+}
+
+.container li,a {
+    list-style-type: none;
+    font-size: 32px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.container a:hover {
+    color: rgb(87, 25, 231);
+    padding: 10px;
+    text-decoration: none;
+    border: #2600ff double 1px;
+}
+
+.container-fluid article {
+    height: 900px;
+    background-image: url('./assets/img/banner-city.jpg');
+}
+
+.text-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff;
+    padding-left: 60px;
+}
+
+.text-banner h1 {
+    font-size: 80px;
+    padding-left: 30px;
+}
+
+.text-banner p {
+    padding-left: 80px;
+    font-size: 28px;
+    border-right: #ffffff solid 2px;
+    width: 600px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: blinkCursor 500ms steps(30) infinite normal, typing 4s steps(40) 1s normal;
+}
