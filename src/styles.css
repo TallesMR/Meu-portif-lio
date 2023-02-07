@@ -119,10 +119,21 @@ p,h1,ul,li {
     opacity: 80%;
 }
 
-.projetos img:hover{
+/* .projetos img:hover{
     opacity: 100%;
-    max-width: 400px;
-    height: 350px;
+    max-width: 1300px;
+    height: 600px;
+    object-fit: cover;
+    margin-left: 1000px;    
+} */
+
+#olho {
+    position: absolute;
+    display: block;
+    opacity: 80%;
+    color: #ffffff;
+    font-size: 40px;
+    margin-top: 230px;
 }
 
 .projetos-itens {
@@ -130,6 +141,22 @@ p,h1,ul,li {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+}
+
+.projetos-itens div {
+    display: flex;
+    gap: 20px;
+    opacity: 80%;
+}
+
+.projetos-itens h2 {
+    font-size: 27px;
+    color: #ffffff;
+}
+
+.projetos-itens i {
+    color: #ffffff;
+    font-size: 32px;
 }
 
 
