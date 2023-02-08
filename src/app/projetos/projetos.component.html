@@ -1,33 +1,49 @@
 <div class="container-fluid projetos">
-    <h1>Projetos</h1>
+    <h1 id="projetos-text">PROJETOS</h1>
     <article class="row projetos-content">
-        <article class="col-md-3 projetos-itens">
+        <article class="col-md-3 projetos-itens" id="biosapiens-teste">
             <h1>Biosapiens</h1>
-            <img src="../../assets/img/biosapiens.png" (mouseleave)="retractImage('biosapiens-img')" id="biosapiens-img">
-            <i class="fa fa-eye" id="olho" (mouseenter)="expandImage('biosapiens-img')" aria-hidden="true"></i>
+                <img src="../../assets/img/biosapiens.png" class="project-images" (mouseleave)="retractImage('biosapiens')" id="biosapiens-img">
+            <i class="fa fa-eye olho" id="biosapiens-eye" (mouseenter)="expandImage('biosapiens')" aria-hidden="true"></i>
             <div>
                 <h2>Saber Mais</h2>
-                <i class="fa fa-long-arrow-down" (click)="showText('biosapiens')"></i>
-                <p style="display: none;" id="biosapiens">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti tempora eaque totam, perspiciatis id fugiat exercitationem fuga necessitatibus. Autem est illo asperiores neque iste accusantium molestias ullam dolor impedit tempora!</p>
+                <i class="fa fa-long-arrow-down" id="down-biosapiens" (click)="controlText('biosapiens')"></i>
+                <i class="fa fa-long-arrow-up" style="display: none;" id="up-biosapiens" (click)="controlText('biosapiens')"></i>
+                <p id="biosapiens-text">Um professora precisava de uma plataforma didática com os conteúdos que ela havia produzido para o seu TCC, fora isso queria utilizar a plataforma também para seus alunos aprenderem via questionários, então a pagina foi montada com um sistema de gameficacão para seus alunos.</p>
             </div>
         </article>
-        <article class="col-md-3 projetos-itens">
-            <h1>Biosapiens</h1>
-            <img src="../../assets/img/biosapiens.png" (mouseleave)="retractImage('qeru-img')" id="qeru-img">
-            <i class="fa fa-eye" id="olho" (mouseenter)="expandImage('qeru-img')" aria-hidden="true"></i>
+        <article class="col-md-3 projetos-itens" id="qeru-teste">
+            <h1>QERU</h1>
+            <img class="project-images" src="../../assets/img/qeru.png" (mouseleave)="retractImage('qeru')" id="qeru-img">
+            <i class="fa fa-eye olho" id="qeru-eye" (mouseenter)="expandImage('qeru')" aria-hidden="true"></i>
             <div>
                 <h2>Saber Mais</h2>
-                <i class="fa fa-long-arrow-down" (click)="showText('qeru')"></i>
-                <p style="display: none;" id="qeru">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti tempora eaque totam, perspiciatis id fugiat exercitationem fuga necessitatibus. Autem est illo asperiores neque iste accusantium molestias ullam dolor impedit tempora!</p>
+                <i class="fa fa-long-arrow-down" id="down-qeru" (click)="controlText('qeru')"></i>
+                <i class="fa fa-long-arrow-up" style="display: none;" id="up-qeru" (click)="controlText('qeru')"></i>
+                <p id="qeru-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti tempora eaque totam, perspiciatis id fugiat exercitationem fuga necessitatibus. Autem est illo asperiores neque iste accusantium molestias ullam dolor impedit tempora!</p>
             </div>
         </article>
-        <article class="col-md-3 projetos-itens">
-            <h1>Biosapiens</h1>
-            <img src="">
+        <article class="col-md-3 projetos-itens" id="sidercomp-teste">
+            <h1>Sidercomp</h1>
+            <img class="project-images" src="../../assets/img/sidercomp.png" (mouseleave)="retractImage('sidercomp')" id="sidercomp-img">
+            <i class="fa fa-eye olho" id="sidercomp-eye" (mouseenter)="expandImage('sidercomp')" aria-hidden="true"></i>
+            <div>
+                <h2>Saber Mais</h2>
+                <i class="fa fa-long-arrow-down" id="down-sidercomp" (click)="controlText('sidercomp')"></i>
+                <i class="fa fa-long-arrow-up" style="display: none;" id="up-sidercomp" (click)="controlText('sidercomp')"></i>
+                <p id="sidercomp-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti tempora eaque totam, perspiciatis id fugiat exercitationem fuga necessitatibus. Autem est illo asperiores neque iste accusantium molestias ullam dolor impedit tempora!</p>
+            </div>
         </article>
-        <article class="col-md-3 projetos-itens">
-            <h1>Biosapiens</h1>
-            <img src="">
+        <article class="col-md-3 projetos-itens" id="balle-teste">
+            <h1>Balle Bot</h1>
+            <img class="project-images" src="../../assets/img/balle-bot.png" (mouseleave)="retractImage('ballebot')" id="ballebot-img">
+            <i class="fa fa-eye olho" id="ballebot-eye" (mouseenter)="expandImage('ballebot')" aria-hidden="true"></i>
+            <div>
+                <h2>Saber Mais</h2>
+                <i class="fa fa-long-arrow-down" id="down-ballebot" (click)="controlText('ballebot')"></i>
+                <i class="fa fa-long-arrow-up" style="display: none;" id="up-ballebot" (click)="controlText('ballebot')"></i>
+                <p id="ballebot-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti tempora eaque totam, perspiciatis id fugiat exercitationem fuga necessitatibus. Autem est illo asperiores neque iste accusantium molestias ullam dolor impedit tempora!</p>
+            </div>
         </article>
     </article>
 </div>

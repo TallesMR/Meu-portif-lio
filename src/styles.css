@@ -2,7 +2,7 @@
 
 
 p,h1,ul,li {
-    font-family: 'Inter';
+    font-family: 'Oswald', sans-serif;
     font-style: normal;
     color: #ffffff;
 }
@@ -95,6 +95,7 @@ p,h1,ul,li {
 
 .about-me p {
     border-left: solid #ffffff;
+    font-size: 20px;
     padding: 20px;
     width: 500px;
     white-space: wrap;
@@ -109,7 +110,7 @@ p,h1,ul,li {
 }
 
 .projetos-content {
-    padding-top: 300px;
+    padding-top: 150px;
 }
 
 .projetos img {
@@ -117,17 +118,10 @@ p,h1,ul,li {
     max-width: 350px;
     height: 300px;
     opacity: 80%;
+    object-fit: cover;
 }
 
-/* .projetos img:hover{
-    opacity: 100%;
-    max-width: 1300px;
-    height: 600px;
-    object-fit: cover;
-    margin-left: 1000px;    
-} */
-
-#olho {
+.olho {
     position: absolute;
     display: block;
     opacity: 80%;
@@ -149,6 +143,10 @@ p,h1,ul,li {
     opacity: 80%;
 }
 
+.projetos-itens h1 {
+    color: #ffffff;
+}
+
 .projetos-itens h2 {
     font-size: 27px;
     color: #ffffff;
@@ -157,6 +155,17 @@ p,h1,ul,li {
 .projetos-itens i {
     color: #ffffff;
     font-size: 32px;
+}
+
+.projetos-itens p {
+    display: none;
+    font-size: 22px;
+}
+
+#projetos-text {
+    padding-top: 45px;
+    font-size: 90px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 

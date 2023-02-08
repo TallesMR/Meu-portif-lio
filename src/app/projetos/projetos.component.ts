@@ -12,22 +12,29 @@ export class ProjetosComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  showText(project: string){
-    var display = document.getElementById(project)!.style.display;
-    display == "none" ? document.getElementById(project)!.style.display = "block" : document.getElementById(project)!.style.display = "none";
+  controlText(project: string){
+    var display = document.getElementById(project + '-text')!.style.display;
+    if (display == "none"){
+      document.getElementById(project + '-text')!.style.display = "block";
+      document.getElementById('down-' + project)!.style.display = "none";
+      document.getElementById('up-' + project)!.style.display = "block";
+    }else{
+      document.getElementById(project + '-text')!.style.display = "none";
+      document.getElementById('up-' + project)!.style.display = "none";
+      document.getElementById('down-' + project)!.style.display = "block";
+    }
   }
 
   expandImage(project:string){
-    let imagem = document.getElementById(project)!.style;
-    imagem.cssText = 'opacity: 100%; max-width: 1300px; height: 600px; object-fit: cover;margin-left: 1000px;'
-    document.getElementById('olho')!.style.display = "none"
-  }
-
+      let imagem = document.getElementById(project + '-img')!.style;
+      imagem.cssText = 'opacity: 100%; max-width: 1300px; height: 600px;margin-left: 1000px;'
+      document.getElementById(project + '-eye')!.style.display = "none";
+    }
+    
   retractImage(project: string){
-  let imagem = document.getElementById(project)!.style; 
-  document.getElementById('olho')!.style.display = "block";
-  
-  imagem.cssText = 'align-items: center; max-width: 350px; height: 300px; opacity: 80%;'
-  }
-
+    let imagem = document.getElementById(project + '-img')!.style; 
+    imagem.cssText = 'align-items: center; max-width: 350px; height: 300px; opacity: 80%;'
+    document.getElementById(project+'-eye')!.style.display = "block";
+  } 
 }
+
