@@ -63,7 +63,7 @@ p,h1,ul,li {
     height: 1000px;
 }
 
-.slider {
+.slider{
     background-image: url('./assets/img/banner-city.jpg');
 }
 
@@ -218,7 +218,7 @@ p,h1,ul,li {
 }
 
 .contato article {
-    height: 500px;
+    height: 400px;
 }
 
 .contato article a:hover{
