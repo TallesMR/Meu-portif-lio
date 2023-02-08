@@ -1,5 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
 
+@keyframes blinkCursor{
+    from {
+        border-right-color: #ffffff;
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0px;
+        white-space: nowrap;
+    }
+
+    50% {
+        white-space: wrap;
+    }
+    to {
+        width: 700px;
+        border-right-color: transparent;
+    }
+}
 
 p,h1,ul,li {
     font-family: 'Oswald', sans-serif;
@@ -37,7 +60,7 @@ p,h1,ul,li {
 }
 
 .container-fluid article {
-    height: 900px;
+    height: 1000px;
 }
 
 .slider {
@@ -105,6 +128,12 @@ p,h1,ul,li {
     background: linear-gradient(rgba(75, 14, 113, 0.9),rgba(25, 19, 30, 1));
 }
 
+#projetos-text {
+    padding-top: 45px;
+    font-size: 80px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .projetos h1 {
     text-align: center;
 }
@@ -112,6 +141,7 @@ p,h1,ul,li {
 .projetos-content {
     padding-top: 150px;
 }
+
 
 .projetos img {
     align-items: center;
@@ -162,33 +192,75 @@ p,h1,ul,li {
     font-size: 22px;
 }
 
-#projetos-text {
-    padding-top: 45px;
-    font-size: 90px;
-    font-family: 'Times New Roman', Times, serif;
+.saibamais h2:hover,i:hover{
+    text-decoration: underline;
+}
+
+.saibamais p {
+    padding-bottom: 20px;
+}
+
+.projetos-itens a {
+    font-size: 22px;
+    text-decoration: underline;
+}
+
+/* CONTATO */
+
+.contato {
+    text-align: center;
+    color: #ffffff;
+    background: linear-gradient(rgba(25, 19, 30, 1),rgba(75, 14, 113, 0.9));
+}
+
+.contato img {
+    float: right;
+}
+
+.contato article {
+    height: 500px;
+}
+
+.contato article a:hover{
+    text-decoration: none;
+    color: #7742c5;
+}
+
+.contato article i {
+    font-size: 60px;
 }
 
 
-@keyframes blinkCursor{
-    from {
-        border-right-color: #ffffff;
-    }
-    to {
-        border-right-color: transparent;
-    }
+.contato article span {
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
 
-@keyframes typing {
-    from {
-        width: 0px;
-        white-space: nowrap;
-    }
+.contato article span h2 {
+    border-bottom: 1px solid #ffffff;
+    width: 400px;
+    font-size: 22px;
+    padding: 10px;
+    text-align: start;
+}
 
-    50% {
-        white-space: wrap;
-    }
-    to {
-        width: 700px;
-        border-right-color: transparent;
-    }
+.contact-inbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contact-border{
+    border-left: 1px solid #ffffff;
+    padding: 30px;
+    height: 200px;
 }
