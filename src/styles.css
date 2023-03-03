@@ -24,25 +24,19 @@
     }
 }
 
+/* HEADER */
+
+.header {
+    margin-bottom: -70px;
+    position: relative;
+    text-align: center;
+    z-index: 999;
+}
+
 p,h1,ul,li {
     font-family: 'Oswald', sans-serif;
     font-style: normal;
     color: #ffffff;
-}
-
-.container {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-.header {
-    width: 1000px;
-    margin-left: 450px;
-    padding-top: 30px;
-    padding-left: 30px;
-    height: 700px;
-    position: absolute;
 }
 
 .container li,a {
@@ -52,35 +46,28 @@ p,h1,ul,li {
     text-decoration: none;
 }
 
-.container a:hover {
+.container-fluid h2 a:hover {
     color: rgb(87, 25, 231);
     padding: 10px;
     text-decoration: none;
     border: #2600ff double 1px;
 }
 
-.container-fluid article {
-    height: 1000px;
-}
-
-.slider{
+.slider {
     background-image: url('./assets/img/banner-city.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    opacity: 0.9;
+  }
+
+.text-banner div h1 {
+    font-size: 60px;
 }
 
-.text-banner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #ffffff;
-    padding-left: 60px;
-}
-
-.text-banner h1 {
-    font-size: 80px;
-    padding-left: 30px;
-}
-
-.text-banner p {
+.text-banner div p {
     padding-left: 80px;
     font-size: 28px;
     border-right: #ffffff solid 2px;
@@ -89,48 +76,33 @@ p,h1,ul,li {
     animation: blinkCursor 500ms steps(30) infinite normal, typing 4s steps(40) 1s normal both;
 }
 
-.text-banner span {
-    color: #ffffff;
-}
-
 .about-me {
     background: linear-gradient(rgba(75, 14, 113, 1) 16.62%, rgba(17, 13, 20, 0.9) 85.61%);
+    text-align: center;
 }
 
-.about-me article {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-}
 
 .about-me img {
-    height: 80%;
-    opacity: 90%;
+    max-width: 400px;
+    opacity: 80%;
+    margin: 20px;
 }
 
-.about-me aside {
-    align-self: flex-start;
-    padding-top: 150px;
-    display: flex;
-    flex-direction: column;
-}
 
 .about-me p {
     border-left: solid #ffffff;
     font-size: 20px;
     padding: 20px;
-    width: 500px;
-    white-space: wrap;
 }
 
 .projetos {
     background: linear-gradient(rgba(75, 14, 113, 0.9),rgba(25, 19, 30, 1));
 }
 
-#projetos-text {
-    padding-top: 45px;
-    font-size: 80px;
+.main-title {
+    padding-top: 30px;
+    font-size: 60px;
+    text-align: center;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -144,7 +116,6 @@ p,h1,ul,li {
 
 
 .projetos img {
-    align-items: center;
     max-width: 350px;
     height: 300px;
     opacity: 80%;
@@ -211,17 +182,19 @@ p,h1,ul,li {
     text-align: center;
     color: #ffffff;
     background: linear-gradient(rgba(25, 19, 30, 1),rgba(75, 14, 113, 0.9));
+    padding-top: 200px;
 }
 
 .contato img {
-    float: right;
-}
-
-.contato article {
     height: 400px;
 }
 
-.contato article a:hover{
+.contato h1 {
+    padding-top: 300px;
+    padding-bottom: 250px;
+}
+
+.contato article span h2 a:hover{
     text-decoration: none;
     color: #7742c5;
 }
@@ -245,22 +218,74 @@ p,h1,ul,li {
     text-align: start;
 }
 
-.contact-inbox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.social-media {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-end;
-}
 
 .contact-border{
     border-left: 1px solid #ffffff;
     padding: 30px;
     height: 200px;
 }
+
+
+@media (max-width: 768px) {
+
+    .header {
+        display: none;
+    }
+
+    .text-banner h1 {
+        font-size: 40px !important;
+        text-align: center;
+    }
+
+    .text-banner p {
+        font-size: 20px;
+        margin: 20px;
+    }
+
+
+    .about-me p {
+      border: none;
+      font-size: 16px;
+      padding: 0px;
+    }
+    
+    .contact-border {
+        border: none;
+        padding: 0px;
+      }
+      
+      .contato article h2{
+        text-align: center !important; 
+      }
+    
+
+      .contato article span h2,a {
+        font-size: 16px !important;     
+      }
+
+      .contato article span i {
+        font-size: 42px;
+      }
+
+      .contato img {
+        height: 350px;
+        object-fit: cover;
+    }
+
+      .olho {
+        display: none;
+      }
+
+      .projetos img {
+        max-width: 250px;
+        height: 300px;
+        opacity: 80%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .main-title {
+        font-size: 30px;
+    }
+      
+  }

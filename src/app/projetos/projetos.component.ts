@@ -25,7 +25,7 @@ export class ProjetosComponent implements OnInit {
     }
   }
 
-  expandImage(project:string){
+  expandImage(project:string, indice: number){
       let imagem = document.getElementById(project + '-img')!.style;
       imagem.cssText = 'opacity: 100%; max-width: 1000px; height: 400px;';
       switch (project) {
@@ -33,7 +33,6 @@ export class ProjetosComponent implements OnInit {
           imagem.cssText = 'opacity: 100%; max-width: 1000px; height: 400px; margin-left: 500px';    
           document.getElementById('qeru')!.style.opacity = '0';
           break;
-      
         case 'ballebot':
           imagem.cssText = 'opacity: 100%; max-width: 1000px; height: 400px; margin-right: 300px';
           break;
