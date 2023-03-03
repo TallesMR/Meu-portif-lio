@@ -11,7 +11,7 @@
 
 @keyframes typing {
     from {
-        width: 0px;
+        width: 0;
         white-space: nowrap;
     }
 
@@ -19,7 +19,7 @@
         white-space: wrap;
     }
     to {
-        width: 700px;
+        width: 130vw;
         border-right-color: transparent;
     }
 }
@@ -68,12 +68,11 @@ p,h1,ul,li {
 }
 
 .text-banner div p {
-    padding-left: 80px;
-    font-size: 28px;
+    padding-left: 100px;
+    font-size: 32px;
     border-right: #ffffff solid 2px;
-    width: 600px;
     overflow: hidden;
-    animation: blinkCursor 500ms steps(30) infinite normal, typing 4s steps(40) 1s normal both;
+    animation: blinkCursor 500ms steps(30) infinite normal, typing 2s steps(40) 1s normal both;
 }
 
 .about-me {
@@ -228,6 +227,31 @@ p,h1,ul,li {
 
 @media (max-width: 768px) {
 
+    @keyframes blinkCursor{
+        from {
+            border-right-color: #ffffff;
+        }
+        to {
+            border-right-color: transparent;
+        }
+    }
+    
+    @keyframes typing {
+        from {
+            width: 0;
+            white-space: nowrap;
+        }
+    
+        50% {
+            white-space: wrap;
+        }
+        to {
+            width: 80vw;
+            border-right-color: transparent;
+        }
+    }
+
+
     .header {
         display: none;
     }
@@ -236,10 +260,8 @@ p,h1,ul,li {
         font-size: 40px !important;
         text-align: center;
     }
-
-    .text-banner p {
+    .text-banner div p {
         font-size: 20px;
-        margin: 20px;
     }
 
 
