@@ -24,10 +24,17 @@
     }
 }
 
+* {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 15px;
+    font-style: normal;
+}
 /* HEADER */
 
 .header {
-    margin-bottom: -70px;
+    margin-bottom: -105px;
+    padding-top: 50px;
     position: relative;
     text-align: center;
     z-index: 999;
@@ -54,13 +61,13 @@ p,h1,ul,li {
 }
 
 .slider {
-    background-image: url('./assets/img/banner-city.jpg');
+    background-image: url('./assets/img/black-table.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
-    background-color: rgba(255, 255, 255, 0.9);
+    height: 90vh;
     opacity: 0.9;
+    background-color: rgba(0, 0, 0, 0.9);
   }
 
 .text-banner div h1 {
@@ -76,14 +83,14 @@ p,h1,ul,li {
 }
 
 .about-me {
-    background: linear-gradient(rgba(75, 14, 113, 1) 16.62%, rgba(17, 13, 20, 0.9) 85.61%);
+    background: linear-gradient(rgb(24, 24, 24) 16.62%, rgba(28, 26, 29, 0.9) 85.61%);
     text-align: center;
 }
 
 
 .about-me img {
     max-width: 400px;
-    opacity: 80%;
+    opacity: 70%;
     margin: 20px;
 }
 
@@ -95,14 +102,13 @@ p,h1,ul,li {
 }
 
 .projetos {
-    background: linear-gradient(rgba(75, 14, 113, 0.9),rgba(25, 19, 30, 1));
+    background: linear-gradient( rgba(28, 26, 29, 0.9) 16.62%,rgb(24, 24, 24) 85.61%); 
 }
 
 .main-title {
     padding-top: 30px;
     font-size: 60px;
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 .projetos h1 {
@@ -152,11 +158,6 @@ p,h1,ul,li {
     color: #ffffff;
 }
 
-.projetos-itens i {
-    color: #ffffff;
-    font-size: 32px;
-}
-
 .projetos-itens p {
     display: none;
     font-size: 22px;
@@ -180,26 +181,30 @@ p,h1,ul,li {
 .contato {
     text-align: center;
     color: #ffffff;
-    background: linear-gradient(rgba(25, 19, 30, 1),rgba(75, 14, 113, 0.9));
+    background: linear-gradient(rgb(24, 24, 24) 30%, rgba(28, 26, 29, 0.9) 70%); 
     padding-top: 200px;
 }
 
-.contato img {
-    height: 400px;
-}
-
-.contato h1 {
-    padding-top: 300px;
-    padding-bottom: 250px;
-}
 
 .contato article span h2 a:hover{
     text-decoration: none;
-    color: #7742c5;
+    color: #000000;
+    border: none;
+    font-size: 30px;
 }
 
 .contato article i {
     font-size: 60px;
+}
+
+.contato h1 {
+    padding-bottom: 10px;
+}
+
+#contato-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -249,11 +254,6 @@ p,h1,ul,li {
             width: 80vw;
             border-right-color: transparent;
         }
-    }
-
-
-    .header {
-        display: none;
     }
 
     .text-banner h1 {
@@ -310,4 +310,16 @@ p,h1,ul,li {
         font-size: 30px;
     }
       
+  }
+
+
+  .cor-seta {
+    color: #ffffff; 
+    font-size: 30px;
+  }
+
+  #dowload-curriculo:hover {
+    color: #000000;
+    padding: 10px;
+    font-size: 32px;
   }

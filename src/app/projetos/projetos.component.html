@@ -1,56 +1,48 @@
 <div class="container-fluid projetos">
-    <h1 class="main-title">PROJETOS</h1>
+    <h1 class="main-title">Experiências</h1>
     <article class="row projetos-content">
-        <section class="col-12 col-md-12 col-lg-3 projetos-itens" id="biosapiens" (mouseleave)="retractImage('biosapiens')">
-            <h1>Biosapiens</h1>    
-                <img src="../../assets/img/biosapiens.png" class="project-images" id="biosapiens-img">
-                <i class="fa fa-eye olho" id="biosapiens-eye" (mouseenter)="expandImage('biosapiens',0)" aria-hidden="true"></i>
+        <section class="col-12 col-md-12 col-lg-3 projetos-itens" id="integracoes">
+            <h1>Integrações/Webservices</h1>    
                 <div>
-                <div class="saibamais" (click)="controlText('biosapiens')">
+                <div class="saibamais" (click)="controlText('integracoes')">
                     <h2>Saiba mais</h2>
-                    <i class="fa fa-long-arrow-down" id="down-biosapiens"></i>
-                    <i class="fa fa-long-arrow-up" style="display: none;" id="up-biosapiens"></i>
+                    <i class="fa fa-long-arrow-down cor-seta" id="down-integracoes"></i>
+                    <i class="fa fa-long-arrow-up cor-seta" style="display: none;" id="up-integracoes"></i>
                 </div>
-                <p id="biosapiens-text">Uma professora precisava de uma plataforma didática com os conteúdos que ela havia produzido para o seu TCC, fora isso queria utilizar a plataforma também para seus alunos aprenderem via questionários. Então a página foi montada com um sistema de gameficação para seus alunos</p>
+                <p id="integracoes-text" style="display: none;">No meu emprego atual, tive a oportunidade de atuar com integrações SOAP, onde realizei operações como consultas e envio de dados para outros sistemas. Além disso, fui responsável por preparar o sistema para receber dados externos e executar operações automatizadas com base nessas informações.</p>
             </div>
         </section>
-        <section class="col-md-12 col-lg-3 projetos-itens" id="qeru">
-            <h1>QERU</h1>
-            <img class="project-images" src="../../assets/img/qeru.png" (mouseleave)="retractImage('qeru')" id="qeru-img">
-            <i class="fa fa-eye olho" id="qeru-eye" (mouseenter)="expandImage('qeru',1)" aria-hidden="true"></i>
+        <section class="col-md-12 col-lg-3 projetos-itens" id="mobile">
+            <h1>Desenvolvimento mobile</h1>
             <div>
-                <div class="saibamais" (click)="controlText('qeru')">
+                <div class="saibamais" (click)="controlText('mobile')">
                 <h2>Saiba mais</h2>
-                <i class="fa fa-long-arrow-down" id="down-qeru"></i>
-                <i class="fa fa-long-arrow-up" style="display: none;" id="up-qeru"></i>
+                <i class="fa fa-long-arrow-down cor-seta" id="down-mobile"></i>
+                <i class="fa fa-long-arrow-up cor-seta" style="display: none;" id="up-mobile"></i>
                 </div>
-                <p id="qeru-text">A QERU é uma plataforma que já esta em sua fase final de desenvolvimento, com ela eu aprimorei muito meus conceitos de Git e GitHub como versionar codigo,conhecimento de um framework, bibliotecas entre outros. A plataforma tem como objetivo de aproximar lojistas com compradores através de  pedidos.</p>
+                <p id="mobile-text" style="display: none;">Experiência no desenvolvimento de aplicações mobile, abrangendo tanto a criação de interfaces visuais quanto a implementação de lógicas de negócio e integração de comunicação entre sistemas.p>
             </div>
         </section>
-        <section class="col-md-12 col-lg-3 projetos-itens" id="adolfo">
-            <h1>Adolfo</h1>
-            <img class="project-images" src="../../assets/img/adolfo.png" (mouseleave)="retractImage('adolfo')" id="adolfo-img">
-            <i class="fa fa-eye olho" id="adolfo-eye" (mouseenter)="expandImage('adolfo',2)" aria-hidden="true"></i>
+        <section class="col-md-12 col-lg-3 projetos-itens" id="etiquetas">
+            <h1>Codificação de etiquetas</h1>
             <div>
-                <div class="saibamais" (click)="controlText('adolfo')">
+                <div class="saibamais" (click)="controlText('etiquetas')">
                 <h2>Saiba mais</h2>
-                <i class="fa fa-long-arrow-down" id="down-adolfo"></i>
-                <i class="fa fa-long-arrow-up" style="display: none;" id="up-adolfo"></i>
-                <p id="adolfo-text">A Adolfo é um e-commerce onde tive meus primeiros contatos com PHP puro e sistemas de estoque. Também tive um amplo avanço com o software de edição de imagens o Photoshop, todos as imagens deveriam passar por um tratamento de imagem e fiquei responsável por isso.</p>
+                <i class="fa fa-long-arrow-down cor-seta" id="down-etiquetas"></i>
+                <i class="fa fa-long-arrow-up cor-seta" style="display: none;" id="up-etiquetas"></i>
+                <p id="etiquetas-text" style="display: none;">Experiência na codificação de etiquetas dinâmicas, ajustando-as conforme os dados parametrizados. Atuei com linguagens de impressoras industriais, como Datamax e Zebra, para garantir a personalização e automação na impressão de etiquetas.</p>
                 </div>
             </div>
         </section>
-        <section class="col-md-12 col-lg-3 projetos-itens" id="ballebot">
-            <h1>Balle Bot</h1>
-            <img class="project-images" src="../../assets/img/balle-bot.png" (mouseleave)="retractImage('ballebot')" id="ballebot-img">
-            <i class="fa fa-eye olho" id="ballebot-eye" (mouseenter)="expandImage('ballebot',3)" aria-hidden="true"></i>
+        <section class="col-md-12 col-lg-3 projetos-itens" id="fullstack">
+            <h1>Full-stack</h1>
             <div>
-                <div class="saibamais" (click)="controlText('ballebot')">
+                <div class="saibamais" (click)="controlText('fullstack')">
                 <h2>Saiba mais</h2>
-                <i class="fa fa-long-arrow-down" id="down-ballebot"></i>
-                <i class="fa fa-long-arrow-up" style="display: none;" id="up-ballebot"></i>
+                <i class="fa fa-long-arrow-down cor-seta" id="down-fullstack"></i>
+                <i class="fa fa-long-arrow-up cor-seta" style="display: none;" id="up-fullstack"></i>
                 </div>
-                <p id="ballebot-text"> Foi um dos primeiros projetos feitos por mim, nele eu contei com a video-aula da <a href="https://www.youtube.com/user/RafaellaBallerini" target="_blank">Rafaella Ballerini</a>. Este projeto embora muito simples foi muito importante para minha trajetória afinal foi com a ajuda dele que consegui meu primeiro estagio e além disso tive a base de conceito que precisava para desenvolver WEB.</p>
+                <p id="fullstack-text" style="display: none;">Experiência em processos complexos de cadastro de dados, desenvolvendo tanto o front-end quanto o back-end, além de gerenciar a comunicação, validação e armazenamento eficiente desses dados.</p>
             </div>
         </section>
     </article>
