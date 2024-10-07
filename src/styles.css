@@ -283,6 +283,9 @@ p,h1,ul,li {
         }
     }
 
+    .projetos-itens h2 {
+        font-size: 20px;
+    }
     .text-banner h1 {
         font-size: 40px !important;
         text-align: center;
@@ -306,9 +309,12 @@ p,h1,ul,li {
         padding: 0px;
     }
       
-      .contato article span i {
+    .contato h2 {
+        font-size: 20px;
+    }
+    .contato article span i {
         font-size: 42px;
-      }
+    }
 
     .main-title {
         font-size: 30px;
